@@ -79,7 +79,8 @@ class CKEditor5 extends PureComponent {
       <WebView
         ref={c => this.webview = c}
         style={style}
-        scrollEnabled={false}
+        scrollEnabled={true}
+        nestedScrollEnabled={true}
         source={{baseUrl: Platform.OS === 'android' ? '' : undefined, html: `
         <!DOCTYPE html>
         <html>
